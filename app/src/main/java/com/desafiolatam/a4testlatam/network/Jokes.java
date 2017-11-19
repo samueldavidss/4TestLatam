@@ -11,6 +11,6 @@ import retrofit2.http.GET;
 
 public interface Jokes {
 
-    @GET(".")
+    @GET("/")
     Call<ChuckNorris> jokesRamdon();
 }

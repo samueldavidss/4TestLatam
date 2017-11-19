@@ -26,13 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
                 new BackgroundJokes().execute("category, icon_url, value, id, url");
-
-
-
-
-
 
             }
         });
@@ -53,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(ChuckNorris chuckNorris) {
             if (chuckNorris != null){
-                TextView authorTextView = (TextView) findViewById( R.id.jokeEtx);
-                authorTextView.setText(chuckNorris.getValue());
+                TextView TextView = (TextView) findViewById( R.id.jokeEtx);
+                TextView.setText(chuckNorris.getValue());
             }
 
             progressDialog.dismiss();

@@ -33,7 +33,7 @@ public class Interceptor {
 
                 Request request = originalRequest.newBuilder()
                     /*Common headers*/
-                        .header("X-Mashape-Key", "rOFZlQ7rpamshWyBgOLeNc1rgkAXp1npSJAjsnpJfPpNgTlGBs")
+                        .header("X-Mashape-Key", "FVkVdo87qWmshl8teEzeClmAa1vXp1fILqhjsnFYNNbvYD07YZ")
                         .header("Accept", "application/json")
                     /*Custom header*/
                         //.header("Flavor", "mint")
