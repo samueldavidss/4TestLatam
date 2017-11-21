@@ -16,7 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class Interceptor {
 
 
-    private static final String BASE_URL = "https://matchilling-chuck-norris-jokes-v1.p.mashape.com/jokes/random";
+    private static final String BASE_URL = "https://matchilling-chuck-norris-jokes-v1.p.mashape.com/jokes/";
 
 
     public Jokes aCommonGetInterceptor() {
