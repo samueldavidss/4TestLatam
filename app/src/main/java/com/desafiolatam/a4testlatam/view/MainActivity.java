@@ -1,6 +1,7 @@
 package com.desafiolatam.a4testlatam.view;
 
 import android.app.ProgressDialog;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -14,12 +15,26 @@ import com.desafiolatam.a4testlatam.network.GetJokes;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Typeface weastText;
+    private Typeface weastText2;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        String fuente1 = "font/Clintwood.otf";
+        this.weastText= Typeface.createFromAsset(getAssets(),fuente1);
+
+       // String fuente2 = "font/WEST.ttf";
+        //this.weastText2 = Typeface.createFromAsset(getAssets(),fuente2);
+
+        TextView text2 = findViewById(R.id.categoriTxt);
+
+        text2.setTypeface(weastText);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -47,8 +62,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(ChuckNorris chuckNorris) {
             if (chuckNorris != null){
-                TextView TextView = (TextView) findViewById( R.id.jokeEtx);
-                TextView.setText(chuckNorris.getValue());
+                TextView Text1 = (TextView) findViewById( R.id.jokeEtx);
+                Text1.setTypeface(weastText);
+                Text1.setText(chuckNorris.getValue());
             }
 
             progressDialog.dismiss();

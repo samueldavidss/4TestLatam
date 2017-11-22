@@ -5,20 +5,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/wildwest"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.desafiolatam.a4testlatam.view.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <TextView
         android:id="@+id/categoriTxt"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30dp"
         android:text="Chuck Norris!" />
 
-
     <TextView
+        android:paddingTop="40dp"
         android:id="@+id/jokeEtx"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:textSize="41dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>

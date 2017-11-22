@@ -10,7 +10,7 @@ import retrofit2.http.GET;
  */
 
 public interface Jokes {
-
+// get del servidor url base + /random
     @GET("random")
     Call<ChuckNorris> jokesRamdon();
 }
